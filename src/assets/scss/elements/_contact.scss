@@ -1,3 +1,5 @@
+@use "../default/variables";
+
 /* ----------------------------------
 	Contact Us Section Styles
  ------------------------------------ */
@@ -47,7 +49,7 @@
 
     input[type="submit"],
     .submit-btn {
-        background: $theme-color;
+        background: variables.$theme-color;
         color: #fff;
         font-weight: 700;
         line-height: 1;
@@ -57,7 +59,7 @@
 
         &.active,
         &:hover {
-            background-color: $second-color;
+            background-color: variables.$second-color;
         }
 
         i {
@@ -85,12 +87,12 @@
 
         .icon {
             color: #fff !important;
-            background-color: $theme-color !important;
+            background-color: variables.$theme-color !important;
         }
 
         .bottom-part {
             .icon {
-                color: $theme-color !important;
+                color: variables.$theme-color !important;
                 background-color: #fff !important;
             }
         }
@@ -115,7 +117,7 @@
             background-color: #fff;
             text-align: center;
             float: left;
-            color: $theme-color;
+            color: variables.$theme-color;
             overflow: hidden;
             margin-right: 20px;
         }
@@ -157,5 +159,5 @@
 }
 
 .make-appointment-wrapper {
-    background-color: $second-color;
+    background-color: variables.$second-color;
 }

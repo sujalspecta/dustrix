@@ -1,3 +1,6 @@
+@use "../default/typography";
+@use "../default/variables";
+
 .faq-section {
     .content-block {
         .bg-img {
@@ -70,7 +73,7 @@
                 top: 50%;
                 font-weight: 400;
                 transform: translateY(-50%);
-                color: $theme-color;
+                color: variables.$theme-color;
             }
 
             &[aria-expanded="true"]:after {
@@ -85,7 +88,7 @@
             }
 
             &:hover {
-                color: $theme-color;
+                color: variables.$theme-color;
             }
         }
     }
@@ -200,7 +203,7 @@
             width: 531px;
             height: 371px;
             content: "";
-            background-color: $theme-color-3;
+            background-color: variables.$theme-color-3;
             top: 25%;
             left: 50%;
             transform: translateX(-50%);
@@ -225,7 +228,7 @@
                 }
 
                 &::after {
-                    background-color: $theme-color-3;
+                    background-color: variables.$theme-color-3;
                     color: #001248;
                     padding: 5px 20px;
                 }
@@ -269,7 +272,7 @@
 
                 &:after {
                     content: "\f067";
-                    font-family: $fa;
+                    font-family: typography.$fa;
                     position: absolute;
                     right: 0;
                     top: 50%;
@@ -295,7 +298,7 @@
                 }
 
                 &:hover {
-                    color: $theme-color;
+                    color: variables.$theme-color;
                 }
             }
         }

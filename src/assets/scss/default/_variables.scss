@@ -193,7 +193,7 @@ $sticky-bg-2: #ea5c50;
     @if $pseudo== "before" or $pseudo== "after" or $pseudo== "both" {
         z-index: 1;
         position: relative;
-        $selector: if($pseudo== "both", "&:before,&:after", "&:#{$pseudo}");
+        $selector: if(sass($pseudo == "both"): "&:before,&:after"; else: "&:#{$pseudo}");
 
         #{$selector} {
             left: 0;

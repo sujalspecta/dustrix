@@ -1,3 +1,5 @@
+@use "../default/variables";
+
 /* ----------------------------------
    Hero Section - Styles
  ------------------------------------ */
@@ -57,7 +59,7 @@
 
     .single-slide {
         padding: 185px 0px 450px;
-        background-color: $section-bg;
+        background-color: variables.$section-bg;
         position: relative;
 
         @media (max-width: 1400px) {
@@ -81,7 +83,7 @@
                 font-size: 120px;
                 line-height: 1;
                 display: inline-block;
-                color: $second-color;
+                color: variables.$second-color;
                 margin-right: 50px;
 
                 @media (max-width: 1280px) {
@@ -139,7 +141,7 @@
         padding: 150px 0px;
         position: relative;
         z-index: 2;
-        background-color: $theme-color-3;
+        background-color: variables.$theme-color-3;
 
         @media (max-width: 1199px) {
             padding: 120px 0px;
@@ -180,14 +182,14 @@
 
         .hero-contents {
             p {
-                color: $second-color;
+                color: variables.$second-color;
             }
 
             h1 {
                 font-size: 90px;
                 line-height: 1.22;
                 display: inline-block;
-                color: $second-color;
+                color: variables.$second-color;
                 font-weight: 700;
 
                 @media (max-width: 1199px) {
@@ -211,14 +213,14 @@
                 }
 
                 &.theme-3 {
-                    border-color: $second-color;
-                    background-color: $second-color;
+                    border-color: variables.$second-color;
+                    background-color: variables.$second-color;
                     color: #fff;
 
                     &:last-child {
                         border-color: #fff;
                         background-color: #fff;
-                        color: $second-color;
+                        color: variables.$second-color;
                     }
                 }
             }

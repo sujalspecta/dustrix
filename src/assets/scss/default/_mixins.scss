@@ -1,5 +1,7 @@
+@use "variables";
+
 .coverbg {
-    @include coverbg;
+    @include variables.coverbg;
 }
 
 .mx-auto {
@@ -7,7 +9,7 @@
 }
 
 .align-center {
-    @include align-center;
+    @include variables.align-center;
 
     &:before,
     &:after {
@@ -16,7 +18,7 @@
 }
 
 .align-center-h {
-    @include align-center("horizontal");
+    @include variables.align-center("horizontal");
 
     &:before,
     &:after {
@@ -26,7 +28,7 @@
 
 .align-center-v {
     height: 100%;
-    @include align-center("vertical");
+    @include variables.align-center("vertical");
 
     &:before,
     &:after {
@@ -36,7 +38,7 @@
 
 .align-center-v-b {
     height: 100%;
-    @include align-center("bottom");
+    @include variables.align-center("bottom");
 
     &:before,
     &:after {

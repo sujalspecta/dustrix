@@ -1,3 +1,5 @@
+@use "../default/variables";
+
 .testimonial-nav {
     a {
         background: #fafafa;
@@ -13,8 +15,8 @@
 
         &.active {
             background-color: #fff !important;
-            color: $theme-color-2 !important;
-            border-right: 4px solid $theme-color-2;
+            color: variables.$theme-color-2 !important;
+            border-right: 4px solid variables.$theme-color-2;
         }
 
         .single-client-tab {
@@ -38,7 +40,7 @@
                 h3 {
                     font-size: 18px;
                     line-height: 24px;
-                    color: $second-color;
+                    color: variables.$second-color;
                 }
 
                 p {
@@ -106,7 +108,7 @@
                     font-size: 22px;
                     line-height: 150%;
                     font-weight: 500;
-                    color: $second-color;
+                    color: variables.$second-color;
 
                     @media (max-width: 767px) {
                         font-size: 20px;

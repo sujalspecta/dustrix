@@ -1,14 +1,16 @@
+@use "../default/variables";
+
 .section-title {
     position: relative;
     margin-top: -5px;
 
     &.style-2 {
         p {
-            color: $theme-color-2;
+            color: variables.$theme-color-2;
         }
 
         h1 {
-            color: $second-color;
+            color: variables.$second-color;
         }
     }
 
@@ -80,11 +82,11 @@
     }
 
     p {
-        color: $theme-color-2;
+        color: variables.$theme-color-2;
     }
 
     h1 {
-        color: $second-color;
+        color: variables.$second-color;
     }
 
     .icon {
@@ -120,7 +122,7 @@
 
 .section-title-3 {
     p {
-        background-color: $theme-color-3;
+        background-color: variables.$theme-color-3;
         padding: 12px 30px;
         line-height: 1;
         color: #001248;
@@ -167,15 +169,15 @@
 }
 
 .section-bg {
-    background-color: $section-bg;
+    background-color: variables.$section-bg;
 }
 
 .theme-bg {
-    background-color: $theme-color;
+    background-color: variables.$theme-color;
 }
 
 .page-banner-wrap {
-    background-color: $theme-color;
+    background-color: variables.$theme-color;
     padding-bottom: 90px;
     padding-top: 120px;
     position: relative;

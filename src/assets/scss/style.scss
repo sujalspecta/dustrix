@@ -67,37 +67,37 @@
 /**************************************
     Default Styles
 ***************************************/
-@import "default/variables";
-@import "default/reset";
-@import "default/typography";
-@import "default/helper";
-@import "default/mixins";
-@import "default/animations";
-@import "default/buttons";
+@use "default/variables";
+@use "default/reset";
+@use "default/typography";
+@use "default/helper";
+@use "default/mixins";
+@use "default/animations";
+@use "default/buttons";
 
 /**************************************
     Inner Styles
 ***************************************/
-@import "common/common";
+@use "common/common";
 
 /**************************************
     Elements Styles
 ***************************************/
-@import "elements/header";
-@import "elements/mobileMenu";
-@import "elements/hero";
-@import "elements/about";
-@import "elements/blog";
-@import "elements/contact";
-@import "elements/contentBlock";
-@import "elements/cta";
-@import "elements/faq";
-@import "elements/features";
-@import "elements/footer";
-@import "elements/funFact";
-@import "elements/price";
-@import "elements/projects";
-@import "elements/section";
-@import "elements/services";
-@import "elements/team";
-@import "elements/testimonial";
+@use "elements/header";
+@use "elements/mobileMenu";
+@use "elements/hero";
+@use "elements/about";
+@use "elements/blog";
+@use "elements/contact";
+@use "elements/contentBlock";
+@use "elements/cta";
+@use "elements/faq";
+@use "elements/features";
+@use "elements/footer";
+@use "elements/funFact";
+@use "elements/price";
+@use "elements/projects";
+@use "elements/section";
+@use "elements/services";
+@use "elements/team";
+@use "elements/testimonial";

@@ -1,3 +1,5 @@
+@use "variables";
+
 /* ----------------------------------
     Template Helps Classes - Styles
  ------------------------------------ */
@@ -910,7 +912,7 @@
 }
 
 #scrollUp {
-  background-color: $theme-color;
+  background-color: variables.$theme-color;
   border-radius: 50%;
   bottom: 20px;
   color: #ffffff;
@@ -922,10 +924,10 @@
   width: 40px;
   box-shadow: 0px 5px 15px 0px rgba(1, 29, 80, 0.1);
   font-weight: 400;
-  @include transition(0.4s);
+  @include variables.transition(0.4s);
 
   &:hover {
-    background-color: $second-color;
+    background-color: variables.$second-color;
   }
 }
 
@@ -1012,7 +1014,7 @@ section {
   h5,
   h6,
   a {
-    color: $white;
+    color: variables.$white;
   }
 
   p {
@@ -1279,7 +1281,7 @@ $animation-list: (
 
     &:hover {
       color: #fff !important;
-      background-color: $second-color;
+      background-color: variables.$second-color;
     }
   }
 }

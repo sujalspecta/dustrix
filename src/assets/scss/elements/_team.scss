@@ -1,10 +1,12 @@
+@use "../default/variables";
+
 .single-team-member {
     transition: all 0.35s ease-in-out;
     position: relative;
     margin-top: 30px;
     height: 410px;
     width: 100%;
-    background: $section-bg;
+    background: variables.$section-bg;
     overflow: hidden;
 
     @media (max-width: 767px) {
@@ -28,7 +30,7 @@
 
         &:hover {
             .plus-icon {
-                background-color: $theme-color-2;
+                background-color: variables.$theme-color-2;
 
                 i {
                     transform: rotate(45deg);
@@ -66,11 +68,11 @@
             font-size: 16px;
             display: inline-block;
             background: #fff;
-            color: $second-color;
+            color: variables.$second-color;
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                background: $theme-color-2;
+                background: variables.$theme-color-2;
                 color: #fff;
             }
         }
@@ -105,7 +107,7 @@
         content: "";
 
         h3 {
-            color: $second-color;
+            color: variables.$second-color;
             background: #fff;
             line-height: 1;
             padding: 20px 25px;
@@ -123,7 +125,7 @@
             color: #fff;
             font-weight: 500;
             line-height: 1;
-            background: $theme-color-2;
+            background: variables.$theme-color-2;
             display: inline-block;
 
             @media (max-width: 767px) {

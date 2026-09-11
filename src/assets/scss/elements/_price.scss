@@ -1,3 +1,6 @@
+@use "../default/typography";
+@use "../default/variables";
+
 .single-pricing-table {
     position: relative;
     z-index: 1;
@@ -24,8 +27,8 @@
         }
 
         .theme-btn {
-            background-color: $theme-color;
-            border-color: $theme-color;
+            background-color: variables.$theme-color;
+            border-color: variables.$theme-color;
         }
     }
 
@@ -45,7 +48,7 @@
         font-size: 20px;
         font-weight: 700;
         line-height: 1;
-        color: $theme-color;
+        color: variables.$theme-color;
 
         span {
             font-size: 100px;
@@ -112,7 +115,7 @@
         left: 0;
         width: 100%;
         height: 0;
-        background-color: $theme-color-2;
+        background-color: variables.$theme-color-2;
         content: "";
         transition: all 0.3s ease-in-out;
         opacity: 0;
@@ -129,7 +132,7 @@
 
         li {
             &::before {
-                color: $theme-color-2;
+                color: variables.$theme-color-2;
             }
         }
     }
@@ -167,7 +170,7 @@
                     position: absolute;
                     right: 0;
                     content: "\f00c";
-                    font-family: $fa;
+                    font-family: typography.$fa;
                     transition: all 0.3s ease-in-out;
                 }
             }

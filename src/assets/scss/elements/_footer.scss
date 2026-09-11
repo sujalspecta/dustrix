@@ -1,3 +1,5 @@
+@use "../default/variables";
+
 .footer-1 {
     position: relative;
 
@@ -17,7 +19,7 @@
     }
 
     .footer-bottom {
-        background-color: $theme-dark;
+        background-color: variables.$theme-dark;
         z-index: 1;
 
         @media (max-width: 767px) {
@@ -94,7 +96,7 @@
 }
 
 .footer-2 {
-    background: $second-color;
+    background: variables.$second-color;
 
     h3,
     h5,
@@ -111,7 +113,7 @@
                     color: #b7bccb !important;
 
                     &:hover {
-                        color: $theme-color-2 !important;
+                        color: variables.$theme-color-2 !important;
                     }
                 }
             }
@@ -122,7 +124,7 @@
                 border-color: #1b2d60 !important;
                 .icon {
                     border-radius: 50px !important;
-                    background-color: $theme-color-2 !important;
+                    background-color: variables.$theme-color-2 !important;
                     color: #fff !important;
                 }
             }
@@ -137,7 +139,7 @@
                 button {
                     width: 60px;
                     height: 60px;
-                    background: $theme-color-2;
+                    background: variables.$theme-color-2;
                     color: #fff;
                     display: inline-block;
                     border-radius: 50px;
@@ -158,11 +160,11 @@
     }
 
     .footer-bottom {
-        background-color: $second-color-dark;
+        background-color: variables.$second-color-dark;
 
         .copyright-info {
             a {
-                color: $theme-color-2 !important;
+                color: variables.$theme-color-2 !important;
                 text-transform: capitalize;
             }
         }
@@ -175,7 +177,7 @@
 
         p,
         a {
-            color: $black;
+            color: variables.$black;
         }
 
         a {
@@ -209,14 +211,14 @@
                 position: absolute;
                 width: 100%;
                 height: 6px;
-                background-color: $theme-color-2;
+                background-color: variables.$theme-color-2;
                 content: "";
                 top: 0;
                 left: 0;
             }
 
             p {
-                color: $textcolor;
+                color: variables.$textcolor;
                 font-size: 14px;
             }
 
@@ -228,7 +230,7 @@
                 }
 
                 a {
-                    background-color: $section-bg;
+                    background-color: variables.$section-bg;
                     width: 40px;
                     height: 40px;
                     line-height: 41px;
@@ -237,12 +239,12 @@
                     transition: all 0.3s ease-in-out;
                     text-align: center;
                     display: inline-block;
-                    color: $second-color;
+                    color: variables.$second-color;
                     margin-right: 5px;
 
                     &:hover {
                         color: #fff;
-                        background-color: $theme-color-2;
+                        background-color: variables.$theme-color-2;
                     }
                 }
             }
@@ -265,7 +267,7 @@
                 &:hover {
                     .icon {
                         background-color: #fff;
-                        color: $theme-color;
+                        color: variables.$theme-color;
                     }
                 }
 
@@ -284,7 +286,7 @@
                     height: 40px;
                     line-height: 40px;
                     color: #000;
-                    background-color: $theme-color;
+                    background-color: variables.$theme-color;
                     float: left;
                     text-align: center;
                     overflow: hidden;
@@ -314,7 +316,7 @@
                 margin-right: 5px;
                 &:hover {
                     color: #fff;
-                    background-color: $theme-color;
+                    background-color: variables.$theme-color;
                 }
             }
         }
@@ -334,7 +336,7 @@
                         margin-bottom: 15px;
                     }
                     &:hover {
-                        color: $theme-color;
+                        color: variables.$theme-color;
                         padding-left: 10px;
                     }
                 }
@@ -524,7 +526,7 @@
                     letter-spacing: -1px;
 
                     &:hover {
-                        color: $theme-color;
+                        color: variables.$theme-color;
                     }
 
                     @media (max-width: 991px) {
@@ -568,7 +570,7 @@
             button {
                 width: 20%;
                 height: 100%;
-                background: $theme-color;
+                background: variables.$theme-color;
                 color: #000;
                 display: inline-block;
                 border-radius: 0px 10px 10px 0px;

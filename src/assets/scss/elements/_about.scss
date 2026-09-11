@@ -1,3 +1,6 @@
+@use "../default/typography";
+@use "../default/variables";
+
 /* ----------------------------------
 	About Us Section Styles
  ------------------------------------ */
@@ -200,7 +203,7 @@
       top: 0;
       left: 0;
       content: "\f00c";
-      font-family: $fa;
+      font-family: typography.$fa;
       font-weight: 400;
       color: rgb(0, 186, 163);
     }
@@ -383,7 +386,7 @@
         font-weight: 700;
         font-size: 60px;
         color: #d55342;
-        font-family: $heading-font;
+        font-family: typography.$heading-font;
       }
     }
   }
@@ -481,7 +484,7 @@
 .about-wrapper {
   .block-contents {
     h1 {
-      color: $second-color;
+      color: variables.$second-color;
       font-size: 56px;
 
       @media (max-width: 1199px) {
@@ -495,7 +498,7 @@
     }
 
     h4 {
-      border-color: $theme-color-2;
+      border-color: variables.$theme-color-2;
       font-weight: 400;
 
       @media (max-width: 1199px) {
@@ -507,10 +510,10 @@
 
     span {
       display: block;
-      color: $theme-color-2;
+      color: variables.$theme-color-2;
 
       b {
-        color: $second-color;
+        color: variables.$second-color;
       }
     }
   }
@@ -520,7 +523,7 @@
   display: inline-block;
   width: 520px;
   height: 614px;
-  background: $theme-color;
+  background: variables.$theme-color;
 
   @media (max-width: 991px) {
     height: 500px;
@@ -537,7 +540,7 @@
     border-style: solid;
     border-radius: 50%;
     background-color: #bfbfbf;
-    box-shadow: 0px 10px 60px 0px $theme-color;
+    box-shadow: 0px 10px 60px 0px variables.$theme-color;
     width: 190px;
     height: 190px;
     z-index: 2;
@@ -558,7 +561,7 @@
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: $theme-color;
+    background-color: variables.$theme-color;
     color: #fff;
     border-radius: 50%;
     line-height: 54px;

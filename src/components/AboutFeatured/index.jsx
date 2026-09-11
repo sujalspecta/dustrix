@@ -10,9 +10,10 @@ function AboutFeatured() {
     return (
         <>
 
+
            <VideoModal
             open={isOpen}
-            onOpenChange={setOpen}
+            onOpenChange={()=> setOpen(!isOpen)}
             videoId="abc123"
             title="Video"
             />

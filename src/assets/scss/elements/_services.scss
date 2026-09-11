@@ -1,3 +1,6 @@
+@use "../default/typography";
+@use "../default/variables";
+
 /* ----------------------------------
   Service Section Styles
  ------------------------------------ */
@@ -31,7 +34,7 @@
             }
 
             .icon {
-                color: $theme-color;
+                color: variables.$theme-color;
                 background-color: #fff;
             }
 
@@ -40,7 +43,7 @@
             }
 
             a {
-                background: $theme-color;
+                background: variables.$theme-color;
                 color: #000;
                 width: 60%;
 
@@ -89,7 +92,7 @@
             border-radius: 50%;
             color: #fff;
             font-size: 48px;
-            background-color: $theme-color;
+            background-color: variables.$theme-color;
             line-height: 120px;
             transition: all 0.3s ease-in-out;
         }
@@ -148,7 +151,7 @@
         text-align: center;
         margin: 0px auto;
         padding: 60px;
-        box-shadow: $box-shadow;
+        box-shadow: variables.$box-shadow;
         background: #fff;
         margin-top: -150px;
 
@@ -158,7 +161,7 @@
 
             .icon {
                 border-radius: 50%;
-                background-color: $theme-color-2;
+                background-color: variables.$theme-color-2;
                 box-shadow: 0px 16px 32px 0px rgba(255, 94, 20, 0.2);
                 width: 140px;
                 height: 140px;
@@ -175,7 +178,7 @@
                     border-radius: 50%;
                     width: 120%;
                     height: 120%;
-                    border-color: $theme-color-2;
+                    border-color: variables.$theme-color-2;
                     position: absolute;
                     content: "";
                     top: 50%;
@@ -189,7 +192,7 @@
 
             h3 {
                 font-size: 22px;
-                color: $second-color;
+                color: variables.$second-color;
             }
 
             a {
@@ -294,7 +297,7 @@
             content: "";
             background: #fff;
             padding: 50px;
-            box-shadow: $box-shadow;
+            box-shadow: variables.$box-shadow;
             opacity: 0;
             visibility: hidden;
             transition: all 0.4s ease-in-out;
@@ -357,7 +360,7 @@
                 font-weight: 600;
                 line-height: 30px;
                 height: 30px;
-                background-color: $theme-color-3;
+                background-color: variables.$theme-color-3;
                 color: #001248;
                 -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
                 clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
@@ -406,7 +409,7 @@
                 font-size: 100px;
                 line-height: 1;
                 -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: $theme-color;
+                -webkit-text-stroke-color: variables.$theme-color;
                 color: transparent;
 
                 @media (max-width: 991px) {
@@ -480,8 +483,8 @@
                 top: 50%;
                 position: absolute;
                 transform: translateY(-50%);
-                color: $white;
-                background-color: $theme-color;
+                color: variables.$white;
+                background-color: variables.$theme-color;
                 margin: 0;
                 padding: 0;
                 width: 60px;
@@ -493,7 +496,7 @@
                 border-radius: 0px;
 
                 &:hover {
-                    background-color: $second-color;
+                    background-color: variables.$second-color;
                     color: #fff;
                 }
 
@@ -514,7 +517,7 @@
             div {
                 &.active {
                     span {
-                        background: $theme-color-3;
+                        background: variables.$theme-color-3;
                     }
                 }
 
@@ -522,7 +525,7 @@
                     background: #fff;
 
                     &:hover {
-                        background-color: $theme-color-3;
+                        background-color: variables.$theme-color-3;
                         color: #fff;
                     }
                 }
@@ -547,11 +550,11 @@
 
         blockquote,
         .wp-block-quote {
-            background-color: $second-color;
+            background-color: variables.$second-color;
             color: #fff;
             font-size: 26px;
             line-height: 1.4;
-            font-family: $heading-font;
+            font-family: typography.$heading-font;
             font-weight: 400;
             padding: 60px;
             text-align: left;
@@ -574,7 +577,7 @@
                 right: 30px;
                 font-size: 110px;
                 line-height: 1;
-                font-family: $fa;
+                font-family: typography.$fa;
                 position: absolute;
                 content: "\f10d";
                 bottom: -20px;
@@ -590,16 +593,16 @@
         padding-top: 10px;
 
         .card {
-            background-color: $theme-color;
+            background-color: variables.$theme-color;
         }
         .card-header {
             a {
                 &:hover {
-                    color: $white;
+                    color: variables.$white;
                 }
 
                 &::after {
-                    color: $white;
+                    color: variables.$white;
                 }
             }
         }
@@ -630,7 +633,7 @@
                 a {
                     position: relative;
                     display: block;
-                    background-color: $theme-color;
+                    background-color: variables.$theme-color;
                     color: #000;
                     text-align: center;
                     padding: 15px 20px;
@@ -639,7 +642,7 @@
                     margin-top: 10px;
 
                     &:hover {
-                        background-color: $second-color;
+                        background-color: variables.$second-color;
                         color: #fff;
                     }
                 }
@@ -667,8 +670,8 @@
                 }
 
                 &:last-child {
-                    background-color: $second-color;
-                    border-color: $second-color;
+                    background-color: variables.$second-color;
+                    border-color: variables.$second-color;
                     color: #fff;
                 }
             }
