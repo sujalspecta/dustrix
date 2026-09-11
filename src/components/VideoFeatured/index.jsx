@@ -3,13 +3,18 @@ import { FaPlay } from 'react-icons/fa';
 import videoBg from '../../assets/img/home3/video_bg.jpg';
 import videoFeaturedData from './videoFeaturedData';
 import VideoFeaturedItem from './VideoFeaturedItem';
-import VideoModal from '../VideoModal/VideoModal';
+import VideoModal from '../VideoModal';
 
 function VideoFeatrued() {
     const [isOpen, setOpen] = useState(false);
     return (
         <>
-           <VideoModal />
+           <VideoModal
+            open={isOpen}
+            onOpenChange={setOpen}
+            videoId="abc123"
+            title="Video"
+            />
             <section className="video-featured-wrapper section-padding section-bg">
                 <div className="container-fluid pl-xl-5 pl-50">
                     <div className="row align-items-center">

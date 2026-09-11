@@ -3,13 +3,18 @@ import { FaPlay } from 'react-icons/fa';
 import icon1 from '../../assets/img/home2/icon/1.png';
 import icon2 from '../../assets/img/home2/icon/2.png';
 import videoBg from '../../assets/img/home2/video_bg.jpg';
-import VideoModal from '../VideoModal/VideoModal';
+import VideoModal from '../VideoModal';
 
 function CoreFeature() {
     const [isOpen, setOpen] = useState(false);
     return (
         <>
-            <VideoModal />
+            <VideoModal
+            open={isOpen}
+            onOpenChange={setOpen}
+            videoId="abc123"
+            title="Video"
+            />
             <section className="video-fetaures-wrapper section-bg section-padding">
                 <div className="container">
                     <div className="row">

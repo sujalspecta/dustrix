@@ -10,13 +10,18 @@ import Pagination from './Pagination';
 import postData from './postData';
 import QuotePost from './QuotePost';
 import SinglePost from './SinglePost';
-import VideoModal from '../VideoModal/VideoModal';
+import VideoModal from '../VideoModal';
 
 function BlogPosts() {
     const [isOpen, setOpen] = useState(false);
     return (
         <>
-          <VideoModal />
+         <VideoModal
+            open={isOpen}
+            onOpenChange={setOpen}
+            videoId="abc123"
+            title="Video"
+            />
             <section className="blog-wrapper news-wrapper section-padding">
                 <div className="container">
                     <div className="row">
