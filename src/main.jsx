@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SimpleReactLightbox from 'simple-react-lightbox';
+import { createRoot } from "react-dom/client";
 import App from './App';
 import './index.scss';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-    <React.StrictMode>
-        <SimpleReactLightbox>
-            <App />
-        </SimpleReactLightbox>
-    </React.StrictMode>,
-    document.getElementById('root')
+
+// ReactDOM.render(
+//     <React.StrictMode>
+//         <SimpleReactLightbox>
+//             <App />
+//         </SimpleReactLightbox>
+//     </React.StrictMode>,
+//     document.getElementById('root')
+// );
+
+const root = createRoot(document.getElementById("root"));
+root.render(
+    // <React.StrictMode>
+        <App />
+    // </React.StrictMode>
 );
-
-reportWebVitals();
