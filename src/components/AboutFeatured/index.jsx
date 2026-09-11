@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
 import { FaHardHat, FaPlay, FaRoad } from 'react-icons/fa';
-import ModalVideo from 'react-modal-video';
-import '../../../node_modules/react-modal-video/scss/modal-video.scss';
 import aboutImg from '../../assets/img/about_us.jpg';
 import btnImg from '../../assets/img/skill_bg.jpg';
 import IconBox from './IconBox';
+import VideoModal from '../VideoModal/VideoModal';
 
 function AboutFeatured() {
     const [isOpen, setOpen] = useState(false);
     return (
         <>
-            <ModalVideo
+            {/* <ModalVideo
                 channel="youtube"
                 autoplay
                 isOpen={isOpen}
                 videoId="EZ9DrY43wtw"
                 onClose={() => setOpen(false)}
-            />
+            /> 
+            */}
+
+            <VideoModal/>
             <section className="about-featured-wrapper section-padding">
                 <div className="container">
                     <div className="row align-items-center">

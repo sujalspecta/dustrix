@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { BiCalendar } from 'react-icons/bi';
 import { BsArrowRight, BsEye } from 'react-icons/bs';
 import { FaPlay, FaRegComments } from 'react-icons/fa';
-import ModalVideo from 'react-modal-video';
 import { Link } from 'react-router-dom';
-import '../../../node_modules/react-modal-video/scss/modal-video.scss';
 import authorImg from '../../assets/img/blog/author_img.jpg';
 import videoImg from '../../assets/img/blog/p3.jpg';
 import BlogSidebar from '../BlogSidebar';
@@ -12,18 +10,13 @@ import Pagination from './Pagination';
 import postData from './postData';
 import QuotePost from './QuotePost';
 import SinglePost from './SinglePost';
+import VideoModal from '../VideoModal/VideoModal';
 
 function BlogPosts() {
     const [isOpen, setOpen] = useState(false);
     return (
         <>
-            <ModalVideo
-                channel="youtube"
-                autoplay
-                isOpen={isOpen}
-                videoId="EZ9DrY43wtw"
-                onClose={() => setOpen(false)}
-            />
+          <VideoModal />
             <section className="blog-wrapper news-wrapper section-padding">
                 <div className="container">
                     <div className="row">

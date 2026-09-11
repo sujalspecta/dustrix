@@ -1,21 +1,15 @@
 import React, { useState } from 'react';
 import { FaPlay } from 'react-icons/fa';
-import ModalVideo from 'react-modal-video';
 import icon1 from '../../assets/img/home2/icon/1.png';
 import icon2 from '../../assets/img/home2/icon/2.png';
 import videoBg from '../../assets/img/home2/video_bg.jpg';
+import VideoModal from '../VideoModal/VideoModal';
 
 function CoreFeature() {
     const [isOpen, setOpen] = useState(false);
     return (
         <>
-            <ModalVideo
-                channel="youtube"
-                autoplay
-                isOpen={isOpen}
-                videoId="EZ9DrY43wtw"
-                onClose={() => setOpen(false)}
-            />
+            <VideoModal />
             <section className="video-fetaures-wrapper section-bg section-padding">
                 <div className="container">
                     <div className="row">

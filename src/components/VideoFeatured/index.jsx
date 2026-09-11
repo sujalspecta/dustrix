@@ -1,21 +1,15 @@
 import React, { useState } from 'react';
 import { FaPlay } from 'react-icons/fa';
-import ModalVideo from 'react-modal-video';
 import videoBg from '../../assets/img/home3/video_bg.jpg';
 import videoFeaturedData from './videoFeaturedData';
 import VideoFeaturedItem from './VideoFeaturedItem';
+import VideoModal from '../VideoModal/VideoModal';
 
 function VideoFeatrued() {
     const [isOpen, setOpen] = useState(false);
     return (
         <>
-            <ModalVideo
-                channel="youtube"
-                autoplay
-                isOpen={isOpen}
-                videoId="EZ9DrY43wtw"
-                onClose={() => setOpen(false)}
-            />
+           <VideoModal />
             <section className="video-featured-wrapper section-padding section-bg">
                 <div className="container-fluid pl-xl-5 pl-50">
                     <div className="row align-items-center">
