@@ -19,7 +19,7 @@ function Process() {
                         <div className="process-setps mt-5 mt-xl-0">
                             {processItemData.map((data) => (
                                 <ProcessItem
-                                    key={data.key}
+                                    key={data.id}
                                     number={data.number}
                                     heading={data.heading}
                                     text={data.text}

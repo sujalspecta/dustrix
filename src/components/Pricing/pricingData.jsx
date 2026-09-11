@@ -14,19 +14,19 @@ const pricingData = [
         btnLink: '/contact',
         status: '',
         features: [
-            <li>
+            <li key='1'>
                 <FiCheck className="icon" />
                 Objectively integrate competencies
             </li>,
-            <li>
+            <li key='2'>
                 <FiCheck className="icon" />
                 Process-centric communities
             </li>,
-            <li>
+            <li key='3'>
                 <FiCheck className="icon" />
                 Emasculate holistic innovation
             </li>,
-            <li>
+            <li key='4'>
                 <FiCheck className="icon" />
                 Incubate intuitive opportunities
             </li>,
@@ -45,27 +45,27 @@ const pricingData = [
         status: 'active',
 
         features: [
-            <li>
+            <li key='5'>
                 <FiCheck className="icon" />
                 Objectively integrate competencies
             </li>,
-            <li>
+            <li key='6'>
                 <FiCheck className="icon" />
                 Process-centric communities
             </li>,
-            <li>
+            <li key='7'>
                 <FiCheck className="icon" />
                 Emasculate holistic innovation
             </li>,
-            <li>
+            <li key='8'>
                 <FiCheck className="icon" />
                 Incubate intuitive opportunities
             </li>,
-            <li>
+            <li key='9'>
                 <FiCheck className="icon" />
                 Incubate intuitive opportunities
             </li>,
-            <li>
+            <li key='10'>
                 <FiCheck className="icon" />
                 24/7 Online Support
             </li>,
@@ -84,19 +84,19 @@ const pricingData = [
         status: '',
 
         features: [
-            <li>
+            <li key='11'>
                 <FiCheck className="icon" />
                 Objectively integrate competencies
             </li>,
-            <li>
+            <li key='12'>
                 <FiCheck className="icon" />
                 Process-centric communities
             </li>,
-            <li>
+            <li key='13'>
                 <FiCheck className="icon" />
                 Emasculate holistic innovation
             </li>,
-            <li>
+            <li key='14'>
                 <FiCheck className="icon" />
                 Incubate intuitive opportunities
             </li>,

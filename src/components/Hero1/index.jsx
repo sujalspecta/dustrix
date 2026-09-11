@@ -2,13 +2,14 @@ import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css';
+ import { Navigation, Pagination, Autoplay } from "swiper/modules";
+ import "swiper/css/bundle";
 import HeroBg1 from '../../assets/img/home1/hero1.jpg';
 
 function Hero1() {
     return (
         <section className="hero-slide-wrapper hero-1">
-            <Swiper className="hero-slider-active owl-carousel">
+            <Swiper  modules={[Navigation, Pagination]} navigation pagination className="hero-slider-active owl-carousel">
                 <SwiperSlide>
                     <div
                         className="single-slide bg-cover"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css';
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+ import "swiper/css/bundle";
 import portfolioTwoData from './porfolioTwoData';
 import PortfolioTwoItem from './PortfolioTwoItem';
 
@@ -20,7 +21,7 @@ function Portfolio2() {
 
             <Swiper
                 spaceBetween={40}
-                autoplay
+                modules={[Autoplay]}
                 className="portfolio-carousel-wrapper owl-carousel"
                 breakpoints={{
                     0: {
@@ -33,9 +34,9 @@ function Portfolio2() {
                 }}
             >
                 {portfolioTwoData.map((data) => (
-                    <SwiperSlide>
+                    <SwiperSlide  key={data.id}>
                         <PortfolioTwoItem
-                            key={data.id}
+                           
                             img={data.image}
                             name={data.name}
                             cost={data.cost}

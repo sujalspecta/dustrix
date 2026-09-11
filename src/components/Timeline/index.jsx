@@ -1,8 +1,8 @@
 import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/swiper-bundle.min.css';
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+ import "swiper/css/bundle";
 import timeLineData from './timeLineData';
 import TimelineItem from './TimelineItem';
 
@@ -22,7 +22,7 @@ export default function App() {
             </div>
 
             <div className="container-flud">
-                <Swiper
+                <Swiper modules={[Navigation, Pagination]}
                     slidesPerView="4"
                     spaceBetween={30}
                     centeredSlides
