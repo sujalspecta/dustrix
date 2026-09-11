@@ -1,4 +1,4 @@
-import { SRLWrapper } from 'simple-react-lightbox';
+
 import img1 from '../../assets/img/blog/ip1.jpg';
 import img2 from '../../assets/img/blog/ip2.jpg';
 import img3 from '../../assets/img/blog/ip3.jpg';
@@ -9,7 +9,7 @@ import img6 from '../../assets/img/blog/ip7.jpg';
 function InstaWidget() {
     return (
         <div className="instagram-gallery">
-            <SRLWrapper>
+            
                 <a href={img1} className="single-photo-item bg-cover ">
                     <img src={img1} alt="" />
                 </a>
@@ -28,7 +28,7 @@ function InstaWidget() {
                 <a href={img6} className="single-photo-item bg-cover ">
                     <img src={img6} alt="" />
                 </a>
-            </SRLWrapper>
+          
         </div>
     );
 }
