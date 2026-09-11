@@ -55,7 +55,7 @@ function BlogDetails() {
                             <div className="comment-form-wrap mt-40">
                                 <h3>Post Comment</h3>
 
-                                <form action="#" className="comment-form">
+                                <form action="#"  onSubmit={handleSubmit} className="comment-form">
                                     <div className="single-form-input">
                                         <textarea placeholder="Type your comments...." />
                                     </div>
@@ -63,7 +63,6 @@ function BlogDetails() {
                                     <CommentInput type="email" placeholder="Type your email..." />
                                     <CommentInput type="text" placeholder="Type your websitee..." />
                                     <button
-                                        onSubmit={handleSubmit}
                                         className="submit-btn"
                                         type="submit"
                                     >

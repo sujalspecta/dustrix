@@ -24,10 +24,10 @@ function Pagination() {
                     <Link to="/news">10</Link>
                 </li>
                 <li>
-                    <Link to="news">11</Link>
+                    <Link to="/news">11</Link>
                 </li>
                 <li>
-                    <Link to="news">
+                    <Link to="/news">
                         <BsArrowRight />
                     </Link>
                 </li>

@@ -7,6 +7,7 @@ import WidgetGetinTouch from './WidgetGetinTouch';
 import WidgetGetinTouchData from './WidgetGetinTouchData';
 import WidgetNews from './WidgetNews';
 import WidgetNewsData from './WidgetNewsData';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Footer1() {
     // STATES
@@ -65,7 +66,7 @@ function Footer1() {
                                         Subscribe our newsletter to get our latest updates &#38;
                                         news.
                                     </p>
-                                    <form action="#">
+                                    <form action="#" onSubmit={onSubmitHandler}>
                                         <input
                                             value={email}
                                             onChange={onchangeHandler}
@@ -76,7 +77,7 @@ function Footer1() {
                                         <button
                                             className="submit-btn"
                                             type="submit"
-                                            onSubmit={onSubmitHandler}
+                                            
                                         >
                                             <FaPaperPlane />
                                         </button>
@@ -111,7 +112,7 @@ function Footer1() {
                         <div className="col-lg-4 col-12">
                             <div className="copyright-info">
                                 <p>
-                                    &copy; Copyright By <a href="index.html">Dustrix</a> - 2021
+                                    &copy; Copyright By <Link to="/">Dustrix</Link> - 2021
                                 </p>
                             </div>
                         </div>

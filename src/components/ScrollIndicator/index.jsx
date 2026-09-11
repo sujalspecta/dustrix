@@ -59,7 +59,7 @@ function ScrollIndicator() {
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behaviour: 'smooth',
+            behavior: 'smooth',
         });
     };
 

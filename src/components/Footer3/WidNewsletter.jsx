@@ -21,7 +21,7 @@ function WidNewsletter() {
                     There are many variations of passages of lorem ipsum available, but the majority
                     have suffered alteration in some form by injected.
                 </p>
-                <form action="#">
+                <form action="#" onSubmit={handleSubmit}>
                     <input
                         value={email}
                         onChange={handleChange}
@@ -29,7 +29,7 @@ function WidNewsletter() {
                         placeholder="Enter email address"
                         required
                     />
-                    <button onSubmit={handleSubmit} className="submit-btn" type="submit">
+                    <button  className="submit-btn" type="submit">
                         <i className="fas fa-envelope" />
                         <FaEnvelope />
                     </button>

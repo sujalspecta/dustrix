@@ -19,14 +19,14 @@ function SearchWidget() {
                 <h3>Search Objects</h3>
             </div>
             <div className="search_widget">
-                <form action="#">
+                <form action="#" onSubmit={submitHandler}>
                     <input
                         value={search}
                         onChange={searchHandler}
                         type="text"
                         placeholder="Search your keyword..."
                     />
-                    <button onSubmit={submitHandler} type="submit">
+                    <button type="submit">
                         <FaSearch />
                     </button>
                 </form>

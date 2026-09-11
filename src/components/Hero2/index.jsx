@@ -1,5 +1,6 @@
 import React from 'react';
 import heroBg from '../../assets/img/home2/hero1.jpg';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Hero2() {
     return (
@@ -10,9 +11,9 @@ function Hero2() {
                         <div className="col-12 col-lg-8 col-xl-7">
                             <div className="hero-contents">
                                 <h1>Dustrix</h1>
-                                <a href="contact.html" className="theme-btn theme-2">
+                                <Link to="/contact" className="theme-btn theme-2">
                                     Make Appointment
-                                </a>
+                                </Link>
                                 <h1>Constuction</h1>
                             </div>
                         </div>

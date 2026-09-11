@@ -17,7 +17,7 @@ function WidNewsletter() {
             </div>
             <div className="newsletter_box">
                 <p>Subscribe our newsletter to get our latest updates and news.</p>
-                <form action="#">
+                <form action="#" onSubmit={handleSubmit}>
                     <input
                         value={email}
                         onChange={handleChange}
@@ -25,7 +25,7 @@ function WidNewsletter() {
                         placeholder="Enter email address"
                         required
                     />
-                    <button onSubmit={handleSubmit} className="submit-btn" type="submit">
+                    <button  className="submit-btn" type="submit">
                         <FaPaperPlane />
                     </button>
                 </form>

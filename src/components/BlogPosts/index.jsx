@@ -63,7 +63,7 @@ function BlogPosts() {
                                 </div>
                                 <div className="post-content">
                                     <div className="post-cat">
-                                        <a href="news.html">Charity</a>
+                                        <Link to="/news">Charity</Link>
                                     </div>
                                     <h2>
                                         <a href="news-details.html">

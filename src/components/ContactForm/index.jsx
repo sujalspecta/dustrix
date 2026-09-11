@@ -26,7 +26,7 @@ function ContactForm({ title, heading }) {
 
                     <div className="col-12 col-lg-12">
                         <div className="contact-form">
-                            <form action="" className="row conact-form">
+                            <form action="" className="row conact-form" onSubmit={onSubmitHandler}>
                                 <FormInput
                                     type="text"
                                     labelFor="fullname"
@@ -74,7 +74,7 @@ function ContactForm({ title, heading }) {
                                         className="submit-btn"
                                         type="submit"
                                         value="Get A Quote"
-                                        onSubmit={onSubmitHandler}
+                                        
                                     />
                                 </div>
                             </form>

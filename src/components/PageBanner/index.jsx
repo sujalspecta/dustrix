@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function PageBanner({ bannerBg, currentPage, heading }) {
     return (
@@ -13,7 +14,7 @@ function PageBanner({ bannerBg, currentPage, heading }) {
                             <nav>
                                 <ol className="breadcrumb">
                                     <li className="breadcrumb-item">
-                                        <a href="index.html">Home</a>
+                                        <Link to="/">Home</Link>
                                     </li>
                                     <li className="breadcrumb-item active" aria-current="page">
                                         {currentPage}

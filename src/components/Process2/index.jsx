@@ -4,6 +4,7 @@ import img3 from '../../assets/img/home3/about-4.jpg';
 import img2 from '../../assets/img/home3/about-5.jpg';
 import ProcessContent from './ProcessContent';
 import ProcessGrid2 from './ProcessGrid2';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Process2() {
     return (
@@ -26,9 +27,9 @@ function Process2() {
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                                 ad minim veniam, quis nostrud exercitation ullamco laboris"
                             />
-                            <a href="contact.html" className="theme-btn theme-3">
+                            <Link to="/contact" className="theme-btn theme-3">
                                 Learn More
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import img from '../../assets/img/home2/cup.png';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Cta2() {
     return (
@@ -19,9 +20,9 @@ function Cta2() {
                     <div className="col-lg-8 p-lg-0">
                         <div className="cta-wrap d-flex justify-content-center justify-content-md-around align-items-center">
                             <h2 className="text-white">Get Your Project Done</h2>
-                            <a href="contact.html" className="">
+                            <Link to="/contact" className="">
                                 Get A Quote <BsArrowRight />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

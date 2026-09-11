@@ -10,7 +10,7 @@ function SinglePost() {
         <div className="single-blog-post post-details">
             <div className="post-content">
                 <div className="post-cat">
-                    <a href="news.html">Business</a>
+                    <Link to="/news">Business</Link>
                 </div>
                 <h2>Dharma Home Suites at Novia offers fully plain furnished apartments to fit</h2>
                 <div className="post-meta">

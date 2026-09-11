@@ -39,7 +39,7 @@ function Subscribe() {
                             <p>Get your answer directly or get weekly updates.</p>
 
                             <div className="subscribe-form">
-                                <form action="#">
+                                <form action="#" onSubmit={onSubmitHandler}>
                                     <input
                                         value={email}
                                         onChange={onChangeHandler}
@@ -50,7 +50,7 @@ function Subscribe() {
                                     <button
                                         className="submit-btn"
                                         type="submit"
-                                        onSubmit={onSubmitHandler}
+                                        
                                     >
                                         Subscribe Now
                                     </button>
