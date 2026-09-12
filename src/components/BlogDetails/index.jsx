@@ -59,9 +59,9 @@ function BlogDetails() {
                                     <div className="single-form-input">
                                         <textarea placeholder="Type your comments...." />
                                     </div>
-                                    <CommentInput type="text" placeholder="Type your name..." />
-                                    <CommentInput type="email" placeholder="Type your email..." />
-                                    <CommentInput type="text" placeholder="Type your websitee..." />
+                                    <CommentInput type="text" id="name" placeholder="Type your name..." />
+                                    <CommentInput type="email" id="name" placeholder="Type your email..." />
+                                    <CommentInput type="text" id="name" placeholder="Type your websitee..." />
                                     <button
                                         className="submit-btn"
                                         type="submit"

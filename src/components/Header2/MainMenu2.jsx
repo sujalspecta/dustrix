@@ -25,7 +25,7 @@ function MainMenu2() {
                                     <img src={logo} alt="logo" />
                                 </Link>
                             </div>
-                            <div className="menu-wrapper">
+                            <div>
                                 <div className="main-menu">
                                     <ul>
                                         <li>

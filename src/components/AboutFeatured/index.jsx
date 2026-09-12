@@ -9,13 +9,14 @@ function AboutFeatured() {
     const [isOpen, setOpen] = useState(false);
     return (
         <>
-
+          
 
            <VideoModal
             open={isOpen}
-            onOpenChange={()=> setOpen(!isOpen)}
-            videoId="abc123"
+            onOpenChange={setOpen} 
             title="Video"
+            videoId="EZ9DrY43wtw"
+            onClose={() => setOpen(false)}
             />
             <section className="about-featured-wrapper section-padding">
                 <div className="container">

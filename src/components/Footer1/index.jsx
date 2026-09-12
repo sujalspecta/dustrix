@@ -73,6 +73,8 @@ function Footer1() {
                                             type="email"
                                             placeholder="Enter email address"
                                             required
+                                            id='email'
+                                            autoComplete='email'
                                         />
                                         <button
                                             className="submit-btn"

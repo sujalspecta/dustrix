@@ -19,7 +19,7 @@ function BlogPosts() {
          <VideoModal
             open={isOpen}
             onOpenChange={setOpen}
-            videoId="abc123"
+           videoId="EZ9DrY43wtw"
             title="Video"
             />
             <section className="blog-wrapper news-wrapper section-padding">

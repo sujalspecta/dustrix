@@ -35,7 +35,7 @@ function ProjectFilter() {
                             <CategoryBtn
                                 className={category === 'all' ? 'btn-active' : null}
                                 name="all"
-                                label="Veiw All"
+                                label="View All"
                                 handleSetCategory={setCategory}
                             />
                             <CategoryBtn

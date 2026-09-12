@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function MainMenu({ hanldeOffset }) {
     return (
         <>
-            <div className="main-menu-area">
+            <div>
                 <div className="row align-center">
                     <div className="col-6 col-md-8 col-lg-10">
                         <div className="main-menu">
